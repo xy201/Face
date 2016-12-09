@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="real_beauty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5lw-bR-Hq7">
+                                <rect key="frame" x="50" y="77" width="275" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="iiX-dv-Z4i"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCV-l4-OrF">
+                                <rect key="frame" x="104" y="452" width="166" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.62591492859999998" blue="0.4201752648" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="A3L-Wp-cOM"/>
+                                </constraints>
+                                <state key="normal" title="上传">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVL-K7-vzn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5lw-bR-Hq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Vot-cD-cyS"/>
+                            <constraint firstItem="5lw-bR-Hq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="VrS-Iz-aqL"/>
+                            <constraint firstAttribute="trailing" secondItem="VCV-l4-OrF" secondAttribute="trailing" constant="105" id="kH6-pe-Wox"/>
+                            <constraint firstItem="VCV-l4-OrF" firstAttribute="top" secondItem="5lw-bR-Hq7" secondAttribute="bottom" constant="50" id="oJc-tL-Frv"/>
+                            <constraint firstAttribute="trailing" secondItem="5lw-bR-Hq7" secondAttribute="trailing" constant="50" id="p9a-Lr-fil"/>
+                            <constraint firstItem="VCV-l4-OrF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="104" id="uG1-EJ-4ZM"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="upImageView" destination="5lw-bR-Hq7" id="spq-W2-KMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="real_beauty.jpg" width="762" height="1028"/>
+    </resources>
+</document>
